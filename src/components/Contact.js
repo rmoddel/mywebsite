@@ -4,7 +4,7 @@ const Contact = (props) => (
     <section id="contact">
         <div className="inner">
             <section>
-                <form method="post" action="#">
+                <form method="post" action="#" id="contact-us">
                     <div className="field half first">
                         <label htmlFor="name">Name</label>
                         <input type="text" name="name" id="name" />
@@ -28,22 +28,22 @@ const Contact = (props) => (
                     <div className="contact-method">
                         <span className="icon alt fa-envelope"></span>
                         <h3>Email</h3>
-                        <a href="#">information@untitled.tld</a>
+                        <a href="mailto:info@mesivtagaonyaakov.org?Subject=I found your website and would like more information" target="_blank">info@mesivtagaonyaakov.org</a>
                     </div>
                 </section>
                 <section>
                     <div className="contact-method">
                         <span className="icon alt fa-phone"></span>
                         <h3>Phone</h3>
-                        <span>(000) 000-0000 x12387</span>
+                        <span>732.806.5891</span>
                     </div>
                 </section>
                 <section>
                     <div className="contact-method">
                         <span className="icon alt fa-home"></span>
                         <h3>Address</h3>
-                        <span>1234 Somewhere Road #5432<br />
-                        Nashville, TN 00000<br />
+                        <span>72 White Road<br />
+                        Lakewood NJ, 08701<br />
                         United States of America</span>
                     </div>
                 </section>

@@ -19,8 +19,8 @@ class HomeIndex extends React.Component {
                 <Helmet
                     title="Gatsby Starter - Forty"
                     meta={[
-                        { name: 'description', content: 'Sample' },
-                        { name: 'keywords', content: 'sample, something' },
+                        { name: 'description', content: 'An amazing Frum Jewish boys high school for awesome, smart, bright and energetic boys with an emphasis on bringing out the best in every student' },
+                        { name: 'keywords', content: 'High School, Mesivta,Yeshiva, Jewish, New, Premier, great amazing ,awesome, caring, boys, young men, torah, gemara, mussar ,halacha, ice skating, paint ball, fun, trips' },
                     ]}
                 >
                 </Helmet>
@@ -79,7 +79,7 @@ class HomeIndex extends React.Component {
                             </header>
                             <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
                             <ul className="actions">
-                                <li><Link to="/landing" className="button next">Get Started</Link></li>
+                                <li><Link to="/contact" className="button next">Contact Us</Link></li>
                             </ul>
                         </div>
                     </section>

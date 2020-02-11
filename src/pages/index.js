@@ -17,7 +17,7 @@ class HomeIndex extends React.Component {
         return (
             <Layout>
                 <Helmet
-                    title="Gatsby Starter - Forty"
+                    title="Mesivta Gaon Yaakov"
                     meta={[
                         { name: 'description', content: 'An amazing Frum Jewish boys high school for awesome, smart, bright and energetic boys with an emphasis on bringing out the best in every student' },
                         { name: 'keywords', content: 'High School, Mesivta,Yeshiva, Jewish, New, Premier, great amazing ,awesome, caring, boys, young men, torah, gemara, mussar ,halacha, ice skating, paint ball, fun, trips' },
@@ -31,10 +31,10 @@ class HomeIndex extends React.Component {
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${pic01})`}}>
                             <header className="major">
-                                <h3>Aliquam</h3>
-                                <p>Ipsum dolor sit amet</p>
+                                <h3>Donate</h3>
+                                <p>Help Support MGY</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <a href="https://pay.banquest.com/gaonyaakov" className="link primary"></a>
                         </article>
                         <article style={{backgroundImage: `url(${pic02})`}}>
                             <header className="major">

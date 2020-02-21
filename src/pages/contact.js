@@ -6,6 +6,7 @@ import axios from "axios";
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
   const [formNumber, setFormNumber] = useState('');
   const [body, setBody] = useState({});
@@ -24,11 +25,11 @@ const Contact = () => {
   }
 
   useEffect(() => {
-    const url = "https://8eyg21vyih.execute-api.us-east-1.amazonaws.com/dev/static-site-mailer";
+    const url = "https://wib6xykkvj.execute-api.us-east-1.amazonaws.com/beta/submit";
     const sendEmail = () => {
       axios.post(url, body)
         .then(function (response) {
-          setBody(false)
+          setBody(false);
           setResponseText("Thank you for your message. We look forward to getting in touch with you shortly.");
           setTimeout(setResponseText(''), 7000);
           console.log(response);
@@ -62,17 +63,21 @@ const Contact = () => {
                 <section>
                   {responseText ? <p>{responseText}</p> :
                     <form method="POST" onSubmit={handleSubmit}>
-                      <div className="field half first">
+                      <div className="field">
                         <label htmlFor="name">Name</label>
                         <input required value={name} type="text" name="name" id="name" onChange={(e) => setName(e.target.value)}/>
                       </div>
-                      <div className="field half">
+                      <div className="field half first">
                         <label htmlFor="email">Email</label>
-                        <input required value={email} type="email" name="reply_to" id="email" onChange={(e) => setEmail(e.target.value)}/>
+                        <input required value={email} type="email" name="email" id="email" onChange={(e) => setEmail(e.target.value)}/>
+                      </div>
+                      <div className="field half">
+                        <label htmlFor="phone">Phone</label>
+                        <input required value={phone} type="text" name="phone" id="phone" onChange={(e) => setPhone(e.target.value)}/>
                       </div>
                       <div className="field">
                         <label htmlFor="message">Message</label>
-                        <textarea required value={message} name="message" id="message" rows="6" onChange={(e) => setMessage(e.target.value)}/>
+                        <textarea placeholder="Enter your message" required value={message} name="message" id="message" rows="6" onChange={(e) => setMessage(e.target.value)}/>
                       </div>
                       <div className="field half" style={{'display': 'inline-flex'}}>
                         <span className="formAdd"> 4 + 5 = </span>

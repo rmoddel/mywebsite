@@ -9,11 +9,12 @@ const Banner = (props) => (
             </header>
             <div className="content">
                 <p>A Mesivta High School envisioned with your son in mind</p>
-                <ul className="actions">
-                  <Link to="/contact" className="button next scrolly">Contact Us</Link>
-                </ul>
+                {/*<ul className="actions">*/}
+                  {/*<Link to="/contact" className="button next scrolly">Contact Us</Link>*/}
+                {/*</ul>*/}
             </div>
         </div>
+
     </section>
 )
 

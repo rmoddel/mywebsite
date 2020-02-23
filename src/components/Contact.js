@@ -1,10 +1,10 @@
 import React from "react";
-import map from './googleMap'
+import Map from './googleMap';
 
 export default () => <section id="contact">
       <div className="inner">
         <section className="split">
-        <map/>
+        <Map/>
         </section>
         <section className="split">
           <section>

@@ -36,6 +36,11 @@
 			line-height: inherit;
 			padding: 1.5em;
 
+           img{
+             max-width: 100%;
+             height: auto;
+           }
+
 			strong {
 				@include vendor('transition', (
 					'background-color #{_duration(transition)} ease-in-out',
@@ -69,7 +74,7 @@
 			height: inherit;
 			line-height: inherit;
 
-			a {
+			a, .a {
 				border: 0;
 				display: block;
 				font-size: 0.8em;
@@ -153,7 +158,7 @@
 
 		@include breakpoint(xlarge) {
 			nav {
-				a {
+				a, .a {
 					&.menu-link {
 						padding-right: 3.75em !important;
 
@@ -167,7 +172,7 @@
 
 		@include breakpoint(large) {
 			nav {
-				a {
+				a, .a {
 					&.menu-link {
 						padding-right: 4em !important;
 
@@ -188,7 +193,7 @@
 			}
 
 			nav {
-				a {
+				a, .a {
 					padding: 0 0.5em;
 
 					&:last-child {
@@ -222,7 +227,7 @@
 			}
 
 			nav {
-				a {
+				a, .a {
 					&.menu-link {
 						overflow: hidden;
 						padding-right: 0 !important;

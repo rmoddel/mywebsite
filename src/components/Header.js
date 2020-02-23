@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import icon from '../assets/images/mgy-logo-white.png'
+import icon from '../assets/images/mgy-website-logo-white.png'
 
 const Header = (props) => (
     <header id="header" className="alt">
-        <Link to="/" className="logo"><img height={100} src={icon}/></Link>
+        <Link to="/" className="logo"><img src={icon} alt=""/></Link>
         <nav>
-            <a className="menu-link" onClick={props.onToggleMenu} >Menu</a>
+            <span className="a menu-link" onClick={props.onToggleMenu} >Menu</span>
         </nav>
     </header>
 )

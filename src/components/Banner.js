@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 const Banner = (props) => (
     <section id="banner" className="major">

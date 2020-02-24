@@ -10,6 +10,7 @@ function Map() {
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 export default function App (){
+  console.log(`Reuben Moddel - ${process.env.GATSBY_GOOGLE_API_KEY}`);
   return (
       <WrappedMap
         isMarkerShown

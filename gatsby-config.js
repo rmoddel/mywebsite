@@ -19,14 +19,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
-    {
-      resolve: 'gatsby-plugin-load-script',
-      options: {
-        //disable: !process.env.SENTRY_DSN, // When do you want to disable it ?
-        src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAbqyJJVkfoYuibYRfUNNbwRJNRxmE150U',
-      },
-    },
-
   ],
 }

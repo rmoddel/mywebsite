@@ -3,8 +3,8 @@ import Map from './googleMap';
 
 export default () => <section id="contact">
       <div className="inner">
-        <section className="split">
-        <Map/>
+        <section>
+          <Map/>
         </section>
         <section className="split">
           <section>

@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
-import ContactInfo from '../components/Contact'
 
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
@@ -53,33 +52,25 @@ class HomeIndex extends React.Component {
                         </article>
                         <article style={{backgroundImage: `url(${pic04})`}}>
                             <header className="major">
-                                <h3>Ipsum</h3>
-                                <p>Nisl sed aliquam</p>
+                                <h3>Pictures</h3>
+                                <p>Father & Son Learning</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic05})`}}>
                             <header className="major">
-                                <h3>Consequat</h3>
-                                <p>Ipsum dolor sit amet</p>
+                              <h3>Pictures</h3>
+                              <p>Father & Son Learning</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic06})`}}>
                             <header className="major">
-                                <h3>Etiam</h3>
-                                <p>Feugiat amet tempus</p>
+                              <h3>Pictures</h3>
+                              <p>Father & Son Learning</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
-                    </section>
-                    <section id="two">
-                        <div className="inner">
-                          <ContactInfo/>
-                            <ul className="actions">
-                                <li><Link to="/contact" className="button next">Contact Us</Link></li>
-                            </ul>
-                        </div>
                     </section>
                 </div>
 

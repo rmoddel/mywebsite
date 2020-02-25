@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BannerLanding from '../components/BannerLanding'
-import Calendar from '../components/googleCalendar'
+//import Calendar from '../components/googleCalendar'
 
 const Landing = (props) => (
   <Layout>

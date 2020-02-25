@@ -11,7 +11,7 @@ const Menu = (props) => (
                 <li><a target="_blank" rel="noopener noreferrer" href="https://pay.banquest.com/gaonyaakov">Donate</a></li>
                 <li><Link onClick={props.onToggleMenu} to="/staff">Staff</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/schedule">Schedule</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/elements">About Us</Link></li>
+                {/*<li><Link onClick={props.onToggleMenu} to="/elements">About Us</Link></li>*/}
             </ul>
             <ul className="actions vertical">
                 <li><a href="#" className="button special fit">Get Started</a></li>
@@ -27,3 +27,4 @@ Menu.propTypes = {
 }
 
 export default Menu
+

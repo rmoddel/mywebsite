@@ -8,6 +8,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
+
       options: {
         name: 'gatsby-starter-default',
         short_name: 'starter',
@@ -19,5 +20,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
+    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src : `https://apis.google.com/js/api.js`
+      },
+    },
+
   ],
 }

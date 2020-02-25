@@ -16,7 +16,7 @@ const Landing = (props) => (
       <section id="two" className="spotlights">
         <section>
           <div style={{width: '80%', margin: 'auto'}}>
-            <Calendar/>
+            {/*<Calendar/>*/}
           </div>
         </section>
       </section>

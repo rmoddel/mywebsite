@@ -11,7 +11,7 @@ const Footer = (props) => (
                 {/*<li><a href="#" className="icon alt fa-linkedin"><span className="label">LinkedIn</span></a></li>*/}
             </ul>
             <ul className="copyright">
-                <li>&copy;  {new Date().getFullYear()}</li><li><a href="https://html5up.net">rmoddel</a></li>
+                <li>&copy; <a href="https://html5up.net">Mesivta Gaon Yaakov</a> {new Date().getFullYear()}</li><li></li>
             </ul>
         </div>
     </footer>

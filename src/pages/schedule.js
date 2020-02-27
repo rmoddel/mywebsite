@@ -2,8 +2,16 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BannerLanding from '../components/BannerLanding'
-//import Calendar from '../components/googleCalendar'
+//import Loadable from 'react-loadable'
 
+import Calendar from '../components/googleCalendar'
+
+// const LoadableCallendar = Loadable({
+//     loader: () => import('../components/googleCalendar'),
+//     loading() {
+//       return <div>Loading...</div>
+//     },
+// })
 const Landing = (props) => (
   <Layout>
     <Helmet>
@@ -16,7 +24,7 @@ const Landing = (props) => (
       <section id="two" className="spotlights">
         <section>
           <div style={{width: '80%', margin: 'auto'}}>
-            {/*<Calendar/>*/}
+            <Calendar/>
           </div>
         </section>
       </section>

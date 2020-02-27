@@ -81,14 +81,15 @@ const Landing = (props) => (
           return (
             <section key={rebbe.id}>
               <Link to="/staff" className="image">
-                <img src={pic08} alt=""/>
+                <img src={rebbe.img} alt=""/>
               </Link>
               <div className="content">
                 <div className="inner">
                   <header className="major">
                     <h3>{rebbe.name} ~ {rebbe.position}</h3>
                   </header>
-                  <p>כל ישראל יש להם חלק לעולם הבא<br/> שנאמר ועמך כולם צדיקים לעולם יירשו ארץ<br/> נצר מטעי מעשה ידי להתפאר</p>
+                  <p>כל ישראל יש להם חלק לעולם הבא<br/> שנאמר ועמך כולם צדיקים לעולם יירשו ארץ<br/> נצר מטעי מעשה ידי
+                    להתפאר</p>
                   <ul className="actions">
                     <li><Link to="/staff" className="button">Bio coming soon</Link></li>
                   </ul>

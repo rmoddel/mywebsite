@@ -13,7 +13,7 @@ const Landing = (props) => {
       <section id="banner" className="style2">
         <div className="inner">
           <header className="major">
-            <h1>Purim Raffle</h1>
+            <h1>Pesach Raffle</h1>
           </header>
         </div>
       </section>

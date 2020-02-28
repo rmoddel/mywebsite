@@ -2,8 +2,8 @@ import React from 'react'
 import {Link} from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import pic08 from '../assets/images/pic08.jpg'
-import pic09 from '../assets/images/pic09.jpg'
+import rabbicohen from '../assets/images/cohen.jpg'
+import comingSoon from '../assets/images/coming-soon.jpg'
 import pic10 from '../assets/images/pic10.jpg'
 
 const Landing = (props) => (
@@ -18,7 +18,7 @@ const Landing = (props) => (
         <header className="major">
           <h1>Staff</h1>
           <div className="content">
-            <p>Coming soon...</p>
+            <p>Almost complete...</p>
           </div>
         </header>
       </div>
@@ -26,62 +26,22 @@ const Landing = (props) => (
     <div id="main">
       <section id="two" className="spotlights">
         {[
-          {id: 1, name: 'Rabbi Chaim Cohen', position: 'Rosh Yeshiva', img: 'cohen.jpeg'},
-          {id: 2, name: 'Rabbi Dovid Aschkenasy', position: 'Mashpai/Senior Advisor', img: 'aschkenasy.jpeg'},
-          {id: 3, name: 'Rabbi Moshe Mermelstein', position: 'Menahel', img: 'http://via.placeholder.com/262x262'},
-          {
-            id: 4,
-            name: 'Rabbi Feivy Schreiber',
-            position: '10th grade Magid Shiur',
-            img: 'http://via.placeholder.com/262x262'
-          },
-          {
-            id: 5,
-            name: 'Rabbi Yaakov Kopel Keller',
-            position: '11th grade Magid Shiur',
-            img: 'http://via.placeholder.com/262x262'
-          },
-          {id: 6, name: 'Rabbi Shalom Rosenfeld', position: '9th grade Magid Shiur ~ 2nd Seder', img: 'rosenfeld.png'},
-          {
-            id: 7,
-            name: 'Rabbi Raphael Fried',
-            position: '10th grade Magid Shiur ~ 2nd Seder',
-            img: 'http://via.placeholder.com/262x262'
-          },
-          {
-            id: 8,
-            name: 'Rabbi Raphael Fried',
-            position: '10th grade Magid Shiur ~ 2nd Seder',
-            img: 'http://via.placeholder.com/262x262'
-          },
-          {
-            id: 9,
-            name: 'Rabbi Avrohom Moshe Neirenberg',
-            position: '10th grade Magid Shiur ~ Halacha Seder',
-            img: 'http://via.placeholder.com/262x262'
-          },
-          {
-            id: 10,
-            name: 'Rabbi Shmuel   Gugenheimer',
-            position: '9th grade Magid Shiur ~ Halacha Seder',
-            img: 'http://via.placeholder.com/262x262'
-          },
-          {
-            id: 11,
-            name: 'Rabbi Dovid Berger',
-            position: 'Engish Principal ~ Limudie Chol',
-            img: 'http://via.placeholder.com/262x262'
-          },
-          {
-            id: 12,
-            name: 'Rabbi Heshy Horovitz',
-            position: 'Administrator',
-            img: 'http://via.placeholder.com/262x262'
-          }].map(rebbe => {
+          {id: 1, name: 'Rabbi Chaim Cohen', position: 'Rosh Yeshiva', img: rabbicohen},
+          {id: 2, name: 'Rabbi Dovid Aschkenasy', position: 'Mashpai/Senior Advisor', img: ''},
+          {id: 3, name: 'Rabbi Moshe Mermelstein', position: 'Menahel', img: ''},
+          {id: 4, name: 'Rabbi Feivy Schreiber',position: '10th grade Magid Shiur',img: ''},
+          {id: 5, name: 'Rabbi Yaakov Kopel Keller',position: '11th grade Magid Shiur',img: ''},
+          {id: 6, name: 'Rabbi Shalom Rosenfeld', position: '9th grade Magid Shiur ~ 2nd Seder', img: ''},
+          {id: 7, name: 'Rabbi Raphael Fried',position: '10th grade Magid Shiur ~ 2nd Seder',img: ''},
+          {id: 8, name: 'Rabbi Raphael Fried',position: '10th grade Magid Shiur ~ 2nd Seder',img: ''},
+          {id: 9, name: 'Rabbi Avrohom Moshe Neirenberg',position: '10th grade Magid Shiur ~ Halacha Seder',img: ''},
+          {id: 10,name: 'Rabbi Shmuel   Gugenheimer',position: '9th grade Magid Shiur ~ Halacha Seder',img: ''},
+          {id: 11,name: 'Rabbi Dovid Berger',position: 'Engish Principal ~ Limudie Chol',img: ''},
+          {id: 12,name: 'Rabbi Heshy Horovitz',position: 'Administrator',img: ''}].map(rebbe => {
           return (
             <section key={rebbe.id}>
               <Link to="/staff" className="image">
-                <img src={rebbe.img} alt=""/>
+                <img src={rebbe.img ? rebbe.img : comingSoon} alt=""/>
               </Link>
               <div className="content">
                 <div className="inner">

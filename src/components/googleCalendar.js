@@ -1,15 +1,24 @@
 import React from 'react'
-import moment from 'moment'
+import FullCalendar from '@fullcalendar/react'
+import dayGridPlugin from '@fullcalendar/daygrid'
+import '@fullcalendar/core/main.css';
+import '@fullcalendar/daygrid/main.css';
+import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
-import BigCalendar from 'react-big-calendar';
-import  'react-big-calendar/lib/css/react-big-calendar.css'
-//BigCalendar.momentLocalizer(moment);
-
-const Calendar = () => (
-  <BigCalendar
-    style={{height: '420px'}}
-    events={[]}
+const Calendar = () => <div >
+  <FullCalendar
+    plugins={[ dayGridPlugin,googleCalendarPlugin ]}
+    googleCalendarApiKey={`${process.env.GATSBY_GOOGLE_CALENDAR_API_KEY}`}
+  eventSources={[
+  {
+    googleCalendarIdz: `${process.env.GATSBY_GOOGLE_CALENDAR_URL_1}`
+  },
+  {
+    googleCalendarId: `${process.env.GATSBY_GOOGLE_CALENDAR_URL_2}`
+  }
+  ]}
+    weekends={true}
   />
-)
+  </div>
 
 export default Calendar;

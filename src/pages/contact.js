@@ -8,7 +8,7 @@ const Contact = () => {
     <Layout>
       <Helmet>
         <title>Mesivta Gaon Yaakov ~ Contact us page</title>
-        <meta name="description" content="Contact Page" />
+        <meta name="description" content="Contact Page"/>
       </Helmet>
 
       <div id="main" className="alt">
@@ -27,22 +27,23 @@ const Contact = () => {
                     <div className="contact-method">
                       <span className="icon alt fa-envelope"></span>
                       <h3>Email</h3>
-                      <a href="mailto:info@mesivtagaonyaakov.org?Subject=I found your website and would like more information"
-                         target="_blank" rel="noopener noreferrer">info@mesivtagaonyaakov.org</a>
+                      <a
+                        href="mailto:info@mesivtagaonyaakov.org?Subject=I found your website and would like more information"
+                        target="_blank" rel="noopener noreferrer">info@mesivtagaonyaakov.org</a>
                     </div>
                   </section>
                   <section>
-                    <div>
-                     <div className="contact-method">
-                       <span className="icon alt fa-phone"></span>
-                       <h3>Phone</h3>
-                       <span>732.806.5891</span>
-                     </div>
-                      <div className="contact-method">
-                       <span className="icon alt fa-fax"></span>
-                       <h3>Fax</h3>
-                       <span>720-247-5057</span>
-                     </div>
+                    <div className="contact-method">
+                      <span className="icon alt fa-phone"></span>
+                      <h3>Phone</h3>
+                      <span>732.806.5891</span>
+                    </div>
+                  </section>
+                  <section>
+                    <div className="contact-method">
+                      <span className="icon alt fa-fax"></span>
+                      <h3>Fax</h3>
+                      <span>720-247-5057</span>
                     </div>
                   </section>
                   <section>

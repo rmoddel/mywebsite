@@ -32,7 +32,7 @@ const Contact = () => {
                     </div>
                   </section>
                   <section>
-                    <div className="contact-method">
+                    <div>
                      <div className="contact-method">
                        <span className="icon alt fa-phone"></span>
                        <h3>Phone</h3>

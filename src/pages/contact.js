@@ -33,9 +33,16 @@ const Contact = () => {
                   </section>
                   <section>
                     <div className="contact-method">
-                      <span className="icon alt fa-phone"></span>
-                      <h3>Phone</h3>
-                      <span>732.806.5891</span>
+                     <div className="contact-method">
+                       <span className="icon alt fa-phone"></span>
+                       <h3>Phone</h3>
+                       <span>732.806.5891</span>
+                     </div>
+                      <div className="contact-method">
+                       <span className="icon alt fa-fax"></span>
+                       <h3>Fax</h3>
+                       <span>720-247-5057</span>
+                     </div>
                     </div>
                   </section>
                   <section>

@@ -4,10 +4,10 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
 
-import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
+import hotelPic from '../assets/images/mgy-hotel-pic.jpg'
 
 class HomeIndex extends React.Component {
     render() {
@@ -26,10 +26,10 @@ class HomeIndex extends React.Component {
 
           <div id="main">
             <section id="one" className="tiles">
-              {[{section : 'Donate', tag : 'Help Support MGY', pic : pic01, link : '/donate' },
-                {section : 'Staff', tag : 'Meet the Hanhalah', pic : pic02, link : '/staff' },
-                {section : 'Schedule', tag : 'Daily and Monthly Schedule', pic : pic03, link : '/schedule' },
-                {section : 'Pictures', tag : 'Father & Son Learning', pic : pic04, link : '/' }
+              {[{section : 'Donate', tag : 'Help Support MGY', pic : pic02, link : '/donate' },
+                {section : 'Staff', tag : 'Meet the Hanhalah', pic : hotelPic, link : '/staff' },
+                {section : 'Schedule', tag : 'Daily and Monthly Schedule', pic : pic04, link : '/schedule' },
+                {section : 'Pictures', tag : 'Father & Son Learning', pic : pic03, link : '/' }
                 ].map(i => <article key={i.section} style={{backgroundImage: `url(${i.pic})`}}>
                 <header className="major">
                   <h3>{i.section}</h3>

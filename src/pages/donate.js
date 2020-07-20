@@ -8,7 +8,7 @@ const Landing = (props) => {
       <Helmet>
         <title>MGY ~ Donate</title>
         <meta name="description" content="Donate page"/>
-        <meta http-equiv="refresh" content={`0; url=https://pay.banquest.com/gaonyaakov`} />
+        <meta http-equiv="refresh" content={`0; url=https://secure.cardknox.com/mesivtagaonyaakov`} />
       </Helmet>
       <section id="banner" className="style2">
         <div className="inner">

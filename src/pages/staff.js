@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import rabbicohen from '../assets/images/cohen.jpg'
 import comingSoon from '../assets/images/coming-soon.jpg'
-import pic10 from '../assets/images/pic10.jpg'
+//import pic10 from '../assets/images/pic10.jpg'
 
 const Landing = (props) => (
   <Layout>

@@ -11,7 +11,7 @@ const Banner = (props) => (
                 <p>A Mesivta High School envisioned with your son in mind</p>
                 <ul className="actions">
                   <Link to="/contact" className="button next scrolly">Contact Us</Link>
-                  <Link to="/202won" className="button next scrolly">WIN HUGE ~ 202WON</Link>
+                  <Link to="https://www.rayze.it/mgy2022" className="button next scrolly">RAYZE.IT 2022!!</Link>
                 </ul>
             </div>
         </div>

@@ -8,7 +8,7 @@ const Landing = (props) => {
       <Helmet>
         <title>MGY ~ Rayze.it Campaign 2022</title>
         <meta name="description" content="Donate page"/>
-        <meta http-equiv="refresh" content={`0; url=https://www.rayze.it/mgy2022/`} />
+        <meta http-equiv="refresh" content={`0; url=https://www.rayze.it/mgy2022/rmoddel`} />
       </Helmet>
       <section id="banner" className="style2">
         <div className="inner">

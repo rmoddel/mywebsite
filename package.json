@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@raphiniert/ra-data-postgrest": "^1.2.1",
     "@types/node": "20.2.5",
     "@types/react": "18.2.8",
     "@types/react-dom": "18.2.4",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
     "next": "13.4.4",
+    "ra-data-json-server": "^4.11.1",
     "react": "18.2.0",
+    "react-admin": "^4.11.1",
     "react-dom": "18.2.0",
     "typescript": "5.1.3"
   }
